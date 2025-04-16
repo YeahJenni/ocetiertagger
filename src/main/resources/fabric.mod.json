@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "oce-tier-tagger",
+  "version": "${version}",
+  "name": "OceTierTagger",
+  "description": "Display player's PvP Tiers in their nametag!",
+  "authors": ["YeahJenni" , "uku & netiyiy (the og mod)"],
+  "contact": {
+    "sources": "https://github.com/YeahJenni/ocetiertagger.git"
+  },
+  "license": "MPL-2.0",
+  "icon": "assets/tier-tagger/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.kevin.tiertagger.TierTagger"
+    ],
+    "ukulib": [
+      "com.kevin.tiertagger.config.UkulibIntegration"
+    ]
+  },
+  "mixins": [
+    "TierTagger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16",
+    "minecraft": ">=1.20.1",
+    "ukulib": "^1.1.2"
+  }
+}
